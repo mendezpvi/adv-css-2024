@@ -6,7 +6,7 @@ In today’s challenge, we’ll create a CSS only toggle.
 
 ## *Solution*
 
-| [Live site](https://mendezpvi.github.io/adv-css-2024/challenge-02/) |
+| [Live site](https://mendezpvi.github.io/advent-of-css-2024/challenge-02/) |
 | --- |
 
 ![](../assets/gifs/challenge-02.gif)
