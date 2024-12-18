@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+  display: grid;
+  place-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1E1E1E;
+}
+
+img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.title {
+  text-align: center;
+  text-shadow: 0 0 3px aqua;
+  color: whitesmoke;
+}
+
+.gallery {
+  --row-height: 156px;
+  margin: 2em 1em;
+  padding: .6em;
+  max-inline-size: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: .6em;
+  background-color: aliceblue;
+  border-radius: 8px;
+}
+
+.gallery[data-count='1'] {
+  grid-template-columns: 1fr;
+}
+
+.gallery[data-count='2'] {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery[data-count='3'] {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, var(--row-height));
+
+  & div.visible-last {
+    grid-column: span 2;
+  }
+}
+
+.gallery[data-count='4'] {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, var(--row-height));
+}
+
+.gallery[data-count='5'] {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, var(--row-height));
+
+  & div:first-child,
+  & div:nth-child(2) {
+    grid-column: span 3;
+  }
+
+  & div:nth-child(3),
+  & div:nth-child(4),
+  & div.visible-last {
+    grid-column: span 2;
+  }
+}
+
+.gallery[data-count='6'] {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, var(--row-height));
+}
+
+.gallery div:last-child {
+  position: relative;
+
+  &::after {
+    content: '+21';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 5px black;
+  }
+}
+
+
+.gallery div:last-child::after {
+  display: none;
+  /* Ocultar por defecto */
+}
+
+.gallery div:last-child.show-after::after {
+  display: block;
+  /* Mostrar cuando tiene la clase 'show-after' */
+}
+
+
+@media (width >=48rem) {
+  .gallery {
+    --row-height: 14.4375rem;
+  }
+}
+@media (width >=85.375rem) {
+  .gallery {
+    --row-height: 27.4375rem;
+  }
+
+  .gallery[data-count='1'] {
+    grid-template-rows: calc(var(--row-height) * 2);
+  }
+}
