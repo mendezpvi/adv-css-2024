@@ -9,7 +9,7 @@ Create a photo gallery card, similar to what Facebook uses in their feed. The â€
 | [Live site](https://mendezpvi.github.io/adv-css-2024/challenge-01/) |
 | --- |
 
-![](../assets/gifs/day-01.gif)
+![](../assets/gifs/challenge-01.gif)
 
 
 ---

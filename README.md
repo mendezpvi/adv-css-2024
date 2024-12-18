@@ -16,9 +16,5 @@ Join in and improve your design skills with Advent of CSS 2024!
 
 ---
 
-## *Challenge #1 - Photo Gallery Card 🖼️*
-
-| [Repository](./challenge-01/README.md) | [Live site](https://mendezpvi.github.io/adv-css-2024/challenge-01/) |
-| --- | --- |
-
-![](./assets/gifs/day-01.gif)
+[![](./assets/covers/challenge-01.avif)](./challenge-01/README.md)
+[![](./assets/covers/challenge-02.avif)](./challenge-02/README.md)
