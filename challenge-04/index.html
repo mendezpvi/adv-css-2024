@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header with Rulers</title>
+
+  <link rel="icon" href="../assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="../assets/images/favicon.svg">
+
+  <style>
+    body {
+      margin: 0;
+      min-block-size: 100vh;
+      display: grid;
+      place-content: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: darkslategrey;
+      color: whitesmoke;
+    }
+
+    h1 {
+      position: relative;
+      padding-inline: .5em;
+      font-size: 5rem;
+      font-weight: bold;
+      text-shadow: 0 0 5px turquoise;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        inline-size: 50%;
+        block-size: 5px;
+        background-color: #fff;
+        box-shadow: 0 0 5px turquoise;
+      }
+
+      &::before {
+        left: 0;
+        transform: translateX(-100%);
+      }
+      &::after {
+        right: 0;
+        transform: translateX(100%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Header with Rulers</h1>
+</body>
+
+</html>

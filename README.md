@@ -12,3 +12,4 @@ This initiative, available at [adventofcss.com](https://www.adventofcss.com/), i
 [![](./assets/covers/challenge-01.avif)](./challenge-01/README.md)
 [![](./assets/covers/challenge-02.avif)](./challenge-02/README.md)
 [![](./assets/covers/challenge-03.avif)](./challenge-03/README.md)
+[![](./assets/covers/challenge-04.avif)](./challenge-04/README.md)
