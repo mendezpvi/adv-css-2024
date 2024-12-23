@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll up to Reveal the Footer</title>
+
+  <link rel="icon" href="../assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="../assets/images/favicon.svg">
+
+  <style>
+    body {
+      margin: 0;
+      min-block-size: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      justify-items: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: darkslategrey;
+      color: whitesmoke;
+    }
+
+    main {
+      block-size: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      & h1 {
+        font-size: 3rem;
+      }
+    }
+
+    footer {
+      inline-size: 100%;
+      padding-block: 5em;
+      font-size: 1.5rem;
+      background-color: black;
+      text-align: center;
+      line-height: 1.8;
+      & p {
+        max-inline-size: 50ch;
+        margin-inline: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Scroll up to Reveal the Footer</h1>
+    <h2>Page content</h2>
+  </main>
+  <footer>
+    <p>Copyright @2024. Ah Ha Creative, LLC. All Rights Reserved. Disclaimers,. Privacy Polity. Terms and Conditions.</p>
+  </footer>
+</body>
+
+</html>
